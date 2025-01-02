@@ -1,0 +1,98 @@
+# Project information
+site_name: Future Makers
+site_description: The Future Makers is the open source course kit for STEAM education.
+copyright: Copyright &copy; All rights reserved. 2017 - 2024 Beets Limited
+site_url: https://futuremakers.beets3d.com/
+
+# extra_css:
+#   - assets/stylesheets/extra.css
+
+# extra_javascript:
+#   - assets/javascripts/extra.js
+
+# Configuration
+theme:
+  name: material
+  custom_dir: docs/overrides
+  font:
+    text: Roboto
+    code: Roboto Mono
+  logo: /assets/beets-logo-square.avif
+  favicon: images/favicon.ico
+  features:
+   - navigation.tabs
+   - navigation.sections
+   - navigation.top
+   - navigation.footer
+   - navigation.indexes
+   - toc.integrate
+   - search.suggest
+   - search.highlight
+   - content.tabs
+   - content.code.annotation
+   - content.code.copy
+   - content.tabs.link
+  static_templates:
+    - sitemap.xml
+  palette:
+    primary: black
+    accent: blue
+    # accent: custom
+  extra:
+    homepage: https://futuremakers.beets3d.com/
+  icon:
+    admonition:
+      note: fontawesome/solid/note-sticky
+      abstract: fontawesome/solid/book
+      info: fontawesome/solid/circle-info
+      tip: fontawesome/solid/bullhorn
+      success: fontawesome/solid/check
+      question: fontawesome/solid/circle-question
+      warning: fontawesome/solid/triangle-exclamation
+      failure: fontawesome/solid/bomb
+      danger: fontawesome/solid/skull
+      bug: fontawesome/solid/robot
+      example: fontawesome/solid/flask
+      quote: fontawesome/solid/quote-left
+
+markdown_extensions:
+  - tables
+  # Enables admonitions
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  # Enables emoji shortcodes like :+1: or :sunglasses:
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: ¶
+      toc_depth: 3
+
+plugins:
+  - glightbox
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - tags:
+      tags_file: tags.md
+
+extra:
+  consent:
+    title: Cookie Consent
+    description: >- 
+      We use cookies to enhance quality of docs content, analyse site effectiveness and needs. 
+      By consenting, you help us improve our website. Thanks!
+  generator: false
+
+
+nav:
+  - Home: index.md
+  - Projects:
+      - Double Side Character: projects/double-side-character/index.md
+      - Useless Box: projects/useless-box/index.md
