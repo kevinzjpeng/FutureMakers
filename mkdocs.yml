@@ -1,5 +1,5 @@
 # Project information
-site_name: Future Makers
+site_name: Future Makers STEAM Course Kit
 site_description: The Future Makers is the open source course kit for STEAM education.
 copyright: Copyright &copy; All rights reserved. 2017 - 2024 Beets Limited
 site_url: https://futuremakers.beets3d.com/
@@ -14,30 +14,33 @@ site_url: https://futuremakers.beets3d.com/
 theme:
   name: material
   custom_dir: docs/overrides
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    - content.tabs
+    - content.code.annotation
+    - content.code.copy
+    - content.tabs.link
+    - content.language.selector
+    - toc.integrate
+    - toc.follow
   font:
     text: Roboto
     code: Roboto Mono
   logo: assets/beets-logo-square.avif
   favicon: images/favicon.ico
-  features:
-   - navigation.tabs
-   - navigation.sections
-   - navigation.top
-   - navigation.footer
-   - navigation.indexes
-   - toc.integrate
-   - search.suggest
-   - search.highlight
-   - content.tabs
-   - content.code.annotation
-   - content.code.copy
-   - content.tabs.link
   static_templates:
     - sitemap.xml
   palette:
-    primary: black
-    accent: blue
-    # accent: custom
+    primary: indigo
+    accent: orange
   extra:
     homepage: https://futuremakers.beets3d.com/
   icon:
@@ -54,6 +57,7 @@ theme:
       bug: fontawesome/solid/robot
       example: fontawesome/solid/flask
       quote: fontawesome/solid/quote-left
+  toc_depth: 3
 
 markdown_extensions:
   - tables
@@ -78,9 +82,45 @@ markdown_extensions:
 plugins:
   - glightbox
   - search:
-      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+      lang:
+        - en
+        - zh_HK
   - tags:
-      tags_file: tags.md
+      tags_file: tags.en.md
+  - i18n:
+      default_language: en
+      docs_structure: suffix
+      reconfigure_material: true
+      languages:
+        en: English
+        zh_HK: 繁體中文 (香港)
+      nav_translations:
+        zh_HK:
+          Home: 首頁
+          Getting Started: 開始使用
+          Projects: 專案
+          Resources: 資源
+          Reference: 參考
+          Double Side Character: 雙面人物
+          Lesson 1: 第一課
+          Overview: 概覽
+          Handbook: 指南
+          Lesson Plan: 教案
+          Exercise Cards: 練習卡
+          Setup: 設置
+          Course Structure: 課程結構
+          How to Use: 使用方法
+          Assessment: 評估
+          Teaching Tips: 教學技巧
+          Materials: 教材
+          Glossary: 詞彙表
+          FAQ: 常見問題
+          Troubleshooting: 疑難排解
+      material_alternate: true
+      nav_toc_translations:
+        zh_HK:
+          toc: 目錄
+          contents: 內容
 
 extra:
   consent:
@@ -92,7 +132,25 @@ extra:
 
 
 nav:
-  - Home: index.md
+  - Home: index.en.md
   - Projects:
-      - Double Side Character: projects/double-side-character/index.md
-      - Useless Box: projects/useless-box/index.md
+    - Double Side Character: 
+      - Overview: projects/double-side-character/index.en.md
+      - 總覽:  projects/double-side-character/index.zh_HK.md
+      - Lesson 1:
+        - Overview: projects/double-side-character/lesson1/index.en.md
+        - Handbook: projects/double-side-character/lesson1/handbook.en.md
+        - Lesson Plan: projects/double-side-character/lesson1/lesson-plan.en.md
+        - Exercise Cards: projects/double-side-character/lesson1/exercise-cards.en.md
+        - 總覽: projects/double-side-character/lesson1/index.zh_HK.md
+        - 指南: projects/double-side-character/lesson1/handbook.zh_HK.md
+        - 教案: projects/double-side-character/lesson1/lesson-plan.zh_HK.md
+        - 練習卡: projects/double-side-character/lesson1/exercise-cards.zh_HK.md
+  - Resources:
+    - Assessment: resources/assessment/index.en.md
+    - Teaching Tips: resources/teaching-tips/index.en.md
+    - Materials: resources/materials/index.en.md
+  - Reference:
+    - Glossary: reference/glossary.en.md
+    - FAQ: reference/faq.en.md
+    - Troubleshooting: reference/troubleshooting.en.md

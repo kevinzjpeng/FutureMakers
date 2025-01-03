@@ -1,3 +1,2 @@
 mkdocs-material
-mkdocs-glightbox
-mkdocs-material[imaging]
+mkdocs-i18n
