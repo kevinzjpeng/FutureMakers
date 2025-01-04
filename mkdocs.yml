@@ -63,6 +63,12 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/beets3d/FutureMakers
       name: FutureMakers on Github
+  consent:
+    title: Cookie Consent
+    description: >- 
+      We use cookies to enhance quality of docs content, analyse site effectiveness and needs. 
+      By consenting, you help us improve our website. Thanks!
+  generator: false
 
 markdown_extensions:
   - tables
@@ -107,9 +113,6 @@ plugins:
           name: 繁體中文 (香港)
           build: true
           site_name: "未來創客: 動手做STEAM專案套裝"
-          theme:
-            palette:
-              primary: grey
           nav_translations:
             Home: 首页
             Projects: 專案
@@ -122,14 +125,8 @@ plugins:
             Handbook: 指南
             Lesson Plan: 教案
             Exercise Cards: 練習卡
-
-extra:
-  consent:
-    title: Cookie Consent
-    description: >- 
-      We use cookies to enhance quality of docs content, analyse site effectiveness and needs. 
-      By consenting, you help us improve our website. Thanks!
-  generator: false
+            Teaching Tips: 教學提示
+            Materials: 材料
 
 
 nav:
