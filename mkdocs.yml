@@ -2,8 +2,7 @@
 site_name: Future Makers STEAM Course Kit
 site_description: The Future Makers is the open source course kit for STEAM education.
 copyright: Copyright &copy; All rights reserved. 2017 - 2024 Beets Limited
-site_url: https://beets3d.github.io/FutureMakers/
-
+site_url: https://beets3d.github.io/
 # extra_css:
 #   - assets/stylesheets/extra.css
 
@@ -28,7 +27,6 @@ theme:
     - content.code.annotation
     - content.code.copy
     - content.tabs.link
-    - content.language.selector
     - toc.integrate
     - toc.follow
   font:
@@ -42,7 +40,7 @@ theme:
     primary: indigo
     accent: orange
   extra:
-    homepage: https://beets3d.github.io/FutureMakers/
+    homepage: https://beets3d.github.io/
   icon:
     admonition:
       note: fontawesome/solid/note-sticky
@@ -86,41 +84,37 @@ plugins:
         - en
         - zh_HK
   - tags:
-      tags_file: tags.en.md
+      tags_file: tags.md
   - i18n:
-      default_language: en
       docs_structure: suffix
+      fallback_to_default: true
       reconfigure_material: true
+      reconfigure_search: true
       languages:
-        en: English
-        zh_HK: 繁體中文 (香港)
-      nav_translations:
-        zh_HK:
-          Home: 首頁
-          Getting Started: 開始使用
-          Projects: 專案
-          Resources: 資源
-          Reference: 參考
-          Double Side Character: 雙面人物
-          Lesson 1: 第一課
-          Overview: 概覽
-          Handbook: 指南
-          Lesson Plan: 教案
-          Exercise Cards: 練習卡
-          Setup: 設置
-          Course Structure: 課程結構
-          How to Use: 使用方法
-          Assessment: 評估
-          Teaching Tips: 教學技巧
-          Materials: 教材
-          Glossary: 詞彙表
-          FAQ: 常見問題
-          Troubleshooting: 疑難排解
-      material_alternate: true
-      nav_toc_translations:
-        zh_HK:
-          toc: 目錄
-          contents: 內容
+        - locale: en
+          default: true
+          name: English
+          build: true
+          site_name: "Future Makers: Hands-On STEAM Projects Kit"
+        - locale: zh_HK 
+          name: 繁體中文 (香港)
+          build: true
+          site_name: "未來創客: 動手做STEAM專案套裝"
+          theme:
+            palette:
+              primary: grey
+          nav_translations:
+            Home: 首页
+            Projects: 專案
+            Resources: 資源
+            Reference: 參考
+            Glossary: 詞彙表
+            Double Side Character: 雙面字
+            Lesson 1: 第一課
+            Overview: 概覽
+            Handbook: 指南
+            Lesson Plan: 教案
+            Exercise Cards: 練習卡
 
 extra:
   consent:
@@ -132,25 +126,20 @@ extra:
 
 
 nav:
-  - Home: index.en.md
+  - Home: index.md
   - Projects:
     - Double Side Character: 
-      - Overview: projects/double-side-character/index.en.md
-      - 總覽:  projects/double-side-character/index.zh_HK.md
+      - Overview: projects/double-side-character/index.md
       - Lesson 1:
-        - Overview: projects/double-side-character/lesson1/index.en.md
-        - Handbook: projects/double-side-character/lesson1/handbook.en.md
-        - Lesson Plan: projects/double-side-character/lesson1/lesson-plan.en.md
-        - Exercise Cards: projects/double-side-character/lesson1/exercise-cards.en.md
-        - 總覽: projects/double-side-character/lesson1/index.zh_HK.md
-        - 指南: projects/double-side-character/lesson1/handbook.zh_HK.md
-        - 教案: projects/double-side-character/lesson1/lesson-plan.zh_HK.md
-        - 練習卡: projects/double-side-character/lesson1/exercise-cards.zh_HK.md
+        - Overview: projects/double-side-character/lesson1/index.md
+        - Handbook: projects/double-side-character/lesson1/handbook.md
+        - Lesson Plan: projects/double-side-character/lesson1/lesson-plan.md
+        - Exercise Cards: projects/double-side-character/lesson1/exercise-cards.md
   - Resources:
-    - Assessment: resources/assessment/index.en.md
-    - Teaching Tips: resources/teaching-tips/index.en.md
-    - Materials: resources/materials/index.en.md
+    - Assessment: resources/assessment/index.md
+    - Teaching Tips: resources/teaching-tips/index.md
+    - Materials: resources/materials/index.md
   - Reference:
-    - Glossary: reference/glossary.en.md
-    - FAQ: reference/faq.en.md
-    - Troubleshooting: reference/troubleshooting.en.md
+    - Glossary: reference/glossary.md
+    - FAQ: reference/faq.md
+    - Troubleshooting: reference/troubleshooting.md

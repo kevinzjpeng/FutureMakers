@@ -11,7 +11,7 @@ toc: true
 
 > 受到桌面雕刻軟件如 Zbrush 和 Blender 的啟發，Nomad 專注於提供簡單易懂的使用界面，同時不犧牲功能性。如果你曾經使用過 3D 雕刻軟件，使用 Nomad 會感到非常熟悉。
 
-![Nomad Sculpt](../images/1.jpg)
+![Nomad Sculpt](images/1.jpg)
 
 ## **你的第一個雕刻作品**
 
