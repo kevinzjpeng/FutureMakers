@@ -3,6 +3,7 @@ site_name: Future Makers STEAM Course Kit
 site_description: The Future Makers is the open source course kit for STEAM education.
 copyright: Copyright &copy; All rights reserved. 2017 - 2024 Beets Limited
 site_url: https://beets3d.github.io/FutureMakers/
+repo_url: https://github.com/beets3d/FutureMakers
 # extra_css:
 #   - assets/stylesheets/extra.css
 
@@ -56,6 +57,12 @@ theme:
       example: fontawesome/solid/flask
       quote: fontawesome/solid/quote-left
   toc_depth: 3
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/beets3d/FutureMakers
+      name: FutureMakers on Github
 
 markdown_extensions:
   - tables
