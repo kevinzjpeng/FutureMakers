@@ -4,6 +4,9 @@
 <style>
     .md-header{position:initial}
     .md-main__inner{margin:0}
+    .md-main nav{display:none}
+    .md-main .md-banner{display:none}
+    .md-main footer{display:none}
     .mdx-hero{
         padding-left: 0.6rem;
         padding-right: 0.6rem;
@@ -23,20 +26,20 @@
 
 {% block content %}
   <header>
-      <h1>Welcome to Future Makers</h1>
-      <p>The opensource course hub for innovative projects and STEAM education.</p>
+      <h1>歡迎來到未來創客</h1>
+      <p>為教育工作者提供的開源STEAM教學資源</p>
   </header>
 
   <section id="introduction">
-      <h2>About Future Makers</h2>
-      <p>Future Makers is dedicated to showcasing groundbreaking projects and initiatives that aim to create a better tomorrow. Join us in exploring the latest advancements and ideas that are transforming our world.</p>
+      <h2>關於未來創客</h2>
+      <p>未來創客致力於展示突破性的項目和計劃，旨在創造更美好的明天。加入我們，探索轉變世界的最新進展和理念。</p>
   </section>
 
   <section id="latest-projects">
-      <h2>Latest Projects</h2>
+      <h2>最新項目</h2>
       <ul>
-          <li><a href="projects/double-side-character/">Double Side Character</a> - A creative exploration of character design.</li>
-          <li><a href="projects/useless-box/">Useless Box</a> - A fun project that turns off itself.</li>
+          <li><a href="projects/double-side-character/">雙面字</a> - 一個可以兩面顯示不同字體的3D小掛件。</li>
+          <li><a href="projects/useless-box/">沒用盒子</a> - 一個可以自行關閉的有趣項目。</li>
           <!-- Add more projects as needed -->
       </ul>
   </section>
@@ -45,3 +48,4 @@
 {% block footer %}
   {{ super() }}
 {% endblock %}
+
