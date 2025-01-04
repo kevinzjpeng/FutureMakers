@@ -1,5 +1,6 @@
 ---
 title: Lesson 1 Handbook - Getting to Know Nomad Sculpt
+comments: true
 ---
 
 # **Handbook: Getting to Know Nomad Sculpt**

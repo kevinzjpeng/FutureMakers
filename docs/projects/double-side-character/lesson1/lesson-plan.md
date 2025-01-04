@@ -1,5 +1,6 @@
 ---
 title: Lesson 1 Plan - Getting to Know Nomad Sculpt
+comments: true
 ---
 
 # **Lesson Plan: Getting to Know Nomad Sculpt**

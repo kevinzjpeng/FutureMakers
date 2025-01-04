@@ -4,6 +4,7 @@ lang: en
 lang_name: English
 alt_lang: zh_HK
 alt_lang_name: 繁體中文 (香港)
+comments: true
 ---
 
 # **Exercise Cards: Getting to Know Nomad Sculpt**

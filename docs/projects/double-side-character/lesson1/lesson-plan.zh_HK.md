@@ -1,5 +1,6 @@
 ---
 title: 第一課教案 - 認識 Nomad Sculpt
+comments: true
 ---
 
 # **教案：認識 Nomad Sculpt**

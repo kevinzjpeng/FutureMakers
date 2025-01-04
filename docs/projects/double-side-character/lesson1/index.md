@@ -1,5 +1,6 @@
 ---
 title: Getting to Know Nomad Sculpt
+comments: true
 ---
 
 # **Lesson 1**

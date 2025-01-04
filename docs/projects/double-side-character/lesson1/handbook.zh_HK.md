@@ -1,6 +1,7 @@
 ---
 title: 第一課指南 - 認識 Nomad Sculpt
 toc: true
+comments: true
 ---
 
 # **指南：認識 Nomad Sculpt**

@@ -1,5 +1,6 @@
 ---
 title: 認識 Nomad Sculpt
+comments: true
 ---
 
 # **第一課**

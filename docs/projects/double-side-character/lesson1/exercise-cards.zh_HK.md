@@ -4,6 +4,7 @@ lang: zh_HK
 lang_name: 繁體中文 (香港)
 alt_lang: en
 alt_lang_name: English
+comments: true
 ---
 
 # **練習卡：認識 Nomad Sculpt**

@@ -1,6 +1,6 @@
 ---
 title: Double Side Character
-
+comments: true
 ---
 
 # Double Side Character Project

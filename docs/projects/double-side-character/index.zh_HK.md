@@ -1,6 +1,6 @@
 ---
 title: 雙面字
-
+comments: true
 ---
 
 # 雙面字
