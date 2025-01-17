@@ -50,6 +50,16 @@ li {
 
 ---
 
+# **Git commands**
+
+- git clone: Clone a repository from a remote source.
+
+```
+git clone https://github.com/beets3d/FutureMakers.git
+```
+
+---
+
 # **Github Introduction**
 <style scoped>
 li {
