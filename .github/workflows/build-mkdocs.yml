@@ -39,23 +39,28 @@ jobs:
           # Create directory for presentations
           mkdir -p docs/assets/slides
 
-          # Find all markdown files
-          find docs -type f -name "*.md" | while read file; do
+          # Process each markdown file individually
+          for file in $(find docs -type f -name "*.md"); do
             # Check if file contains marp: true
             if grep -q "marp: true" "$file"; then
               echo "Building presentation from $file"
               filename=$(basename "$file" .md)
               dirname=$(dirname "$file")
-              output_pdf="docs/assets/slides/${dirname##*/}-${filename}.pdf"
+              relative_path=${dirname#docs/}
+              output_pdf="docs/assets/slides/${relative_path}/${filename}.pdf"
               
               # Create output directory if it doesn't exist
               mkdir -p "$(dirname "$output_pdf")"
               
               # Convert to PDF
-              marp "$file" --pdf --allow-local-files --output "$output_pdf"
+              marp --pdf --allow-local-files "$file" -o "$output_pdf"
               
-              # Add download link to the markdown file
-              echo -e "\n[Download Presentation]($(realpath --relative-to="$dirname" /assets/slides/${dirname##*/}-${filename}.pdf))" >> "$file"
+              # Calculate relative path for the link
+              relative_link_path="assets/slides/${relative_path}/${filename}.pdf"
+              # Add download link to the markdown file if it doesn't exist already
+              if ! grep -q "Download Presentation" "$file"; then
+                echo -e "\n[Download Presentation](/${relative_link_path}){: .md-button }" >> "$file"
+              fi
             fi
           done
 
