@@ -1,6 +1,11 @@
 ---
 title: Lesson 1 Plan - Getting to Know Nomad Sculpt
 comments: true
+marp: true
+_class: lead
+paginate: true
+backgroundColor: #fff
+backgroundImage: url('https://marp.app/assets/hero-background.svg')
 ---
 
 # **Lesson Plan: Getting to Know Nomad Sculpt**
@@ -11,7 +16,9 @@ comments: true
 - **Target:** Primary Year 4 students
 - **Duration:** 55 minutes (5 + 25 + 15 + 10)
 
-## Required Materials
+---
+
+# **Required Materials (Teacher)**
 ### Teacher Preparation
 - Projector
 - Demonstration videos
@@ -20,6 +27,9 @@ comments: true
 - 3D model file of Moai statue
 - Game cards
 
+---
+
+# **Required Materials (Student)**
 ### Student Materials
 - Tablet with Nomad Sculpt installed
 - Stylus/Electronic pen

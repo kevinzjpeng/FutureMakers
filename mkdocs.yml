@@ -141,6 +141,7 @@ plugins:
 
 nav:
   - Home: index.md
+  - Setup: setup.md
   - Projects:
     - Double Side Character: 
       - Overview: projects/double-side-character/index.md
@@ -157,3 +158,6 @@ nav:
     - Glossary: reference/glossary.md
     - FAQ: reference/faq.md
     - Troubleshooting: reference/troubleshooting.md
+
+extra_css:
+  - assets/stylesheets/extra.css
