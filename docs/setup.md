@@ -1,5 +1,5 @@
 ---
-title: Opensource coursekit tool chain setup guide
+title: Setup Opensource tool chain for coursekit
 marp: true
 _class: lead
 paginate: true
@@ -105,6 +105,7 @@ table {
 - Markdown is a lightweight markup language with plain text formatting syntax. It is designed to be easy to read, write, and format.
 - Markdown syntax: [https://www.markdownguide.org/basic-syntax/](https://www.markdownguide.org/basic-syntax/)
 - Examples:
+
     | Syntax                  | Example                                      |
     |-------------------------|----------------------------------------------|
     | `# Heading`             | # Heading                                    |
