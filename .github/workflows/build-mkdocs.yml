@@ -28,7 +28,6 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: pip install mkdocs-material
-      # install additional dependencies here
       - name: Install additional dependencies
         run: |
           pip install -r requirements.txt
@@ -47,27 +46,30 @@ jobs:
               filename=$(basename "$file" .md)
               dirname=$(dirname "$file")
               relative_path=${dirname#docs/}
-              output_pdf="docs/assets/slides/${relative_path}/${filename}.pdf"
+              output_base="docs/assets/slides/${relative_path}/${filename}"
               
               # Create output directory if it doesn't exist
-              mkdir -p "$(dirname "$output_pdf")"
+              mkdir -p "$(dirname "$output_base")"
               
-              # Convert to PDF
-              marp --pdf --allow-local-files "$file" -o "$output_pdf"
+              # Convert to PDF and PPTX
+              marp --pdf --allow-local-files "$file" -o "${output_base}.pdf"
+              marp --pptx --allow-local-files "$file" -o "${output_base}.pptx"
               
-              # Calculate relative path for the link
-              # Count the number of directory levels to create proper relative path
+              # Calculate relative path for the links
               depth=$(echo "$relative_path" | tr -cd '/' | wc -c)
               prefix=""
               for ((i=0; i<depth+1; i++)); do
                 prefix="../$prefix"
               done
               
-              relative_link_path="${prefix}assets/slides/${relative_path}/${filename}.pdf"
+              pdf_link_path="${prefix}assets/slides/${relative_path}/${filename}.pdf"
+              pptx_link_path="${prefix}assets/slides/${relative_path}/${filename}.pptx"
               
-              # Add download link to the markdown file if it doesn't exist already
+              # Add download links to the markdown file if they don't exist already
               if ! grep -q "Download Presentation" "$file"; then
-                echo -e "\n[Download Presentation](${relative_link_path}){: .md-button }" >> "$file"
+                echo -e "\n## Download Presentation\n" >> "$file"
+                echo -e "[Download PDF](${pdf_link_path}){: .md-button }" >> "$file"
+                echo -e "[Download PPTX](${pptx_link_path}){: .md-button }" >> "$file"
               fi
             fi
           done
