@@ -56,10 +56,18 @@ jobs:
               marp --pdf --allow-local-files "$file" -o "$output_pdf"
               
               # Calculate relative path for the link
-              relative_link_path="assets/slides/${relative_path}/${filename}.pdf"
+              # Count the number of directory levels to create proper relative path
+              depth=$(echo "$relative_path" | tr -cd '/' | wc -c)
+              prefix=""
+              for ((i=0; i<depth+1; i++)); do
+                prefix="../$prefix"
+              done
+              
+              relative_link_path="${prefix}assets/slides/${relative_path}/${filename}.pdf"
+              
               # Add download link to the markdown file if it doesn't exist already
               if ! grep -q "Download Presentation" "$file"; then
-                echo -e "\n[Download Presentation](/${relative_link_path}){: .md-button }" >> "$file"
+                echo -e "\n[Download Presentation](${relative_link_path}){: .md-button }" >> "$file"
               fi
             fi
           done
