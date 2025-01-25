@@ -7,22 +7,23 @@ backgroundColor: #fff
 backgroundImage: url('https://marp.app/assets/hero-background.svg')
 ---
 
-# **Tool Chain Introduction**
+# **Tool Chain Introduction Table of Contents**
 
-## [1. Git introduction](#git-introduction)
+[1. Git introduction](#git-introduction)
 
-## [2. Github introduction](#github-introduction)
+[2. Github introduction](#github-introduction)
 
-## [3. VSCode / Cursor](#vscode)
+[3. VSCode / Cursor](#vscode)
 
-## [4. Markdown](#markdown)
+[4. Markdown](#markdown)
 
-## [5. Warp for VSCode](#warp-for-vscode)
+[5. Warp for VSCode](#warp-for-vscode)
 
-## [6. Github pages](#github-pages)
+[6. Github pages](#github-pages)
+
 ---
 
-# **Git Introduction**
+# **Git Intxroduction**
 <style scoped>
 li {
     font-size: 24px;
@@ -49,6 +50,12 @@ li {
   5. Working Directory: The area where you make edits to your files.
 
 ---
+# **Git installation**
+
+- Install Git from [here](https://git-scm.com/downloads)
+- Check if Git is installed by running `git --version` in the terminal
+
+---
 
 # **Git commands**
 
@@ -58,6 +65,10 @@ li {
 git clone https://github.com/beets3d/FutureMakers.git
 ```
 
+- git pull: Pull changes from a remote repository to your local repository.
+```
+git pull origin main
+```
 ---
 
 # **Github Introduction**
@@ -95,6 +106,12 @@ li {
   3. Collaboration: Use issues and pull requests to manage changes and collaborate with others.
   4. Releases: Create releases to mark specific versions of your project.
 ---
+# Actions
+
+1. Register a Github account
+2. Git clone the FutureMakers repository to your local machine
+
+---
 
 # **VSCode / Cursor**
 
@@ -104,6 +121,15 @@ li {
 - Cursor
     1. Cursor is an AI-powered code editor developed by Cursor AI. It uses AI to assist with code writing, debugging, and refactoring. Cursor integrates with GitHub, allowing for seamless collaboration and version control.
     2. Download Cursor from [here](https://www.cursor.com/)
+
+---
+# Clone the FutureMakers repository in Cursor
+
+1. Install Cursor
+2. Register an cursor account
+3. Git clone the FutureMakers repository
+4. Open the repository in Cursor
+
 ---
 
 # **Markdown**
