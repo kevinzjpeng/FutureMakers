@@ -161,7 +161,14 @@ table {
 
 ---
 
-# **Github pages**
+# **Github pages and Mkdocs **
 
 - Github pages is a static website hosting service that allows us to host our own website for free.
-- We can use Github pages to host our own website.
+- We can use MKdocs to build our website and host it on Github pages.
+- Install MKdocs by running `pip install mkdocs` in the terminal
+- Run `mkdocs serve` to serve the website
+- Run `mkdocs build` to build the website. The built website will be in the `site` folder.
+
+Note:
+- We need to install the requirements.txt file by running `pip install -r requirements.txt` in the terminal. 
+- If you are using python 3.10 or above, you should make your virtual environment with python 3.10 and install the requirements.txt file in the virtual environment.
