@@ -161,7 +161,7 @@ table {
 
 ---
 
-# **Github pages and Mkdocs **
+# **Github pages and Mkdocs**
 
 - Github pages is a static website hosting service that allows us to host our own website for free.
 - We can use MKdocs to build our website and host it on Github pages.
