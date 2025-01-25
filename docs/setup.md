@@ -19,7 +19,7 @@ backgroundImage: url('https://marp.app/assets/hero-background.svg')
 
 [5. Warp for VSCode](#warp-for-vscode)
 
-[6. Github pages](#github-pages)
+[6. Github pages and Mkdocs](#github-pages-and-mkdocs)
 
 ---
 
